@@ -1,0 +1,17 @@
+# build output
+bin/
+obj/
+*.user
+*.suo
+
+# NuGet restore output
+packages/
+
+# Dassault redistributables - never commit
+SolidWorks.Interop.*.dll
+
+# release archives
+*.zip
+
+# nuget.exe downloaded by build.ps1
+.tools/
