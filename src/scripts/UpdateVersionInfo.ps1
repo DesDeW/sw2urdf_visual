@@ -12,8 +12,12 @@ try {
     $git = Get-Command git -CommandType Application -ErrorAction Stop
     $sha = & $git.Source rev-parse --short HEAD 2>$null
     if ($LASTEXITCODE -eq 0 -and $sha) {
-        $dirty = & $git.Source status --porcelain 2>$null
-        $suffix = if ($dirty) { '+{0}.dirty' -f $sha } else { '+{0}' -f $sha }
+        # build.ps1 rewrites the HintPath entries of the .csproj while it builds and
+        # restores them afterwards, so that file is dirty during every build and must not
+        # count as "source modified" - otherwise every DLL would be marked .dirty.
+        $status = & $git.Source status --porcelain 2>$null
+        $dirty = @($status | Where-Object { $_ -and ($_ -notmatch 'SW2URDF\.csproj$') })
+        $suffix = if ($dirty.Count -gt 0) { '+{0}.dirty' -f $sha } else { '+{0}' -f $sha }
         $CommitVersion = $BaseVersion + $suffix
     }
 }
