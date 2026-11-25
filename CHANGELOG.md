@@ -9,6 +9,12 @@ A complete fork of [ros/solidworks_urdf_exporter](https://github.com/ros/solidwo
 Link / joint / coordinate systems / axes / mass properties / limits / CSV / package layout
 are all inherited from upstream.
 
+## Versioning
+
+The **public release is 1.0**. Everything numbered 3.0–3.17 in this document was an
+internal development build number used while the fork was being written; the released
+product is 1.0, an independent line that descends from upstream sw2urdf 1.6.1.
+
 ## Functional changes
 
 | File | Change |
@@ -82,7 +88,9 @@ Output: `fork\SW2URDF\bin\x64\Debug\SW2Visual.dll`
 | 2.8 | white accepted for **non-textured** appearances (white ABS parts were falling through to black) |
 
 See `README.md` for the full resolution order and material/appearance rules.
-## v3.x summary (visual fork, texture + STEP surfaces)
+## Internal development history (3.0 – 3.17)
+
+Everything below is included in release **1.0**.
 
 | Version | Change |
 |---|---|

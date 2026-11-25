@@ -1,6 +1,6 @@
 # Export Options
 
-This document describes every option in the export wizard of **sw2urdf(visual) v3.8**.
+This document describes every option in the export wizard of **sw2urdf(visual) 1.0**.
 
 It is split into two parts on purpose:
 
@@ -98,7 +98,7 @@ Worth calling out, because they are inherited and can waste time:
 |---|---|
 | **Color (R/G/B/A)** | The fork calls `Visual.SuppressMaterial()`: URDF materials are not written at all. Colour comes from the DAE |
 | **Material name** | same |
-| **Texture (Replaces Color)** | same; since 3.17 the file is not even copied into the package any more |
+| **Texture (Replaces Color)** | same; since 1.0 the file is not even copied into the package any more |
 | **Mesh Detail (Course/Fine)** | visual meshes no longer use STL, so this only changes collision fidelity |
 
 ---

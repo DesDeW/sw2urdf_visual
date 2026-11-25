@@ -15,3 +15,6 @@ SolidWorks.Interop.*.dll
 
 # nuget.exe downloaded by build.ps1
 .tools/
+
+# generated setup folder (DLLs + zip staging)
+setup/

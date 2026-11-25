@@ -67,7 +67,7 @@ Pass 2 – textured appearances (carbon fibre, thormel, ...)
 
 ## 5. Textured materials
 
-Textures are exported since v3.0, but only for parts whose colour could **not** be resolved
+Textures are exported since 1.0 (internal build 3.0), but only for parts whose colour could **not** be resolved
 at component level — i.e. parts that carry the material's own appearance and nothing else.
 
 ```
@@ -94,7 +94,7 @@ the triangle normal selects the projection plane, one tile covers 5 cm. Good eno
 tiling textures (carbon fibre, brushed metal); **not** suitable for decals or logos.
 
 There is **no black-lifting step** any more: the `#292929` workaround of the 2.x series was
-dropped when the colour resolution was rewritten for 3.x. A part whose colour really is
+dropped when the colour resolution was rewritten for 1.0. A part whose colour really is
 black is written as black. In practice this no longer matters for carbon parts, because they
 get the texture image instead of a flat colour.
 

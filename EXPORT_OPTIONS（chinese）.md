@@ -1,6 +1,6 @@
 # 导出选项说明
 
-本文说明 **sw2urdf(visual) v3.8** 导出向导里的每一个选项。
+本文说明 **sw2urdf(visual) 1.0** 导出向导里的每一个选项。
 
 内容刻意分成两部分：
 
@@ -95,7 +95,7 @@
 |---|---|
 | **Color (R/G/B/A)** | fork 调用了 `Visual.SuppressMaterial()`，完全不写 URDF 材质。颜色来自 DAE |
 | **Material name** | 同上 |
-| **Texture (Replaces Color)** | 同上；自 3.17 起连文件都不再拷进包里 |
+| **Texture (Replaces Color)** | 同上；自 1.0 起连文件都不再拷进包里 |
 | **Mesh Detail (Course/Fine)** | 视觉网格已不用 STL，所以它只改变碰撞精度 |
 
 ---
