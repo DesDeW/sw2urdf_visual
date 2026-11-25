@@ -18,3 +18,7 @@ SolidWorks.Interop.*.dll
 
 # generated setup folder (DLLs + zip staging)
 setup/
+
+# MSBuild / build.ps1 temporaries
+*.bak
+*_wpftmp.csproj
